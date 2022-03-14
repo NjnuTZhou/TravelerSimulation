@@ -27,7 +27,7 @@
 # 注意！！！
   1.程序运行比较吃电脑性能，模拟一次需约2~3小时，一次请只运行一个模拟进程。
   2.程序入口函数为main()
-    ```
+    ```python
     def main():
       simulation_params = SimulationParams(fo.open_json_file('simulation_params_2.json'))
       get_path_length(simulation_params)
