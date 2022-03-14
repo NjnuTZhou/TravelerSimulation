@@ -20,13 +20,11 @@
   1.下载源码之后，创建以下目录
   
     simulation.py：simulationData/simulation_traveler_distribution
-    
     simulation_maxU.py：simulationData_maxU/simulation_traveler_distribution
     
   2.运行程序
   
     python simulation.py
-    
     python simulation_maxU
     
 # 注意！！！
