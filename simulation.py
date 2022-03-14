@@ -487,7 +487,7 @@ def get_path_length(simulation_params):
 def main():
 
     simulation_params = SimulationParams(
-        fo.open_json_file('simulation_params.json'))
+        fo.open_json_file('simulation_params_2.json'))
     get_path_length(simulation_params)
 
     base_params = BaseParams(0)
