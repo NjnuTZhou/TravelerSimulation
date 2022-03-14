@@ -27,6 +27,7 @@
 # 注意！！！
   1.程序运行比较吃电脑性能，模拟一次需约2~3小时，一次请只运行一个模拟进程。
   2.程序入口函数为main()
+  
     ```python
     def main():
       simulation_params = SimulationParams(fo.open_json_file('simulation_params_2.json'))
@@ -40,6 +41,7 @@
       print('------simulating holiday...')
       simulation(base_params1, simulation_params)
     ```
+    
     main函数中包括两个模拟，分别为工作日(0)和节假日(1)，如果只模拟一个，将另外一个注释即可
 # 输出结果解释
   1.simulationData/timeData*.json：模拟结果的时间序列，表示景区内人数随时间变化的趋势
