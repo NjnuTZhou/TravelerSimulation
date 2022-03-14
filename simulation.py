@@ -379,9 +379,9 @@ def save_simulation_data(base_params):
         }
 
     fo.write_json_file(traveler_trail_data,
-                       'simulationData2/simulationData' + str(base_params.date_type) + ".json")
+                       'simulationData/simulationData' + str(base_params.date_type) + ".json")
     fo.write_json_file(base_params.total_traveler_count,
-                       'simulationData2/timeData' + str(base_params.date_type) + ".json")
+                       'simulationData/timeData' + str(base_params.date_type) + ".json")
 
 
 def save_hour_traveler_distribution(base_params):
@@ -407,7 +407,7 @@ def save_hour_traveler_distribution(base_params):
                 "coordinates": traveler.coordinate
             }
         })
-    fo.write_json_file(geojson, 'simulationData2/simulation_traveler_distribution/' + str(
+    fo.write_json_file(geojson, 'simulationData/simulation_traveler_distribution/' + str(
         base_params.date_type) + "_" + str(base_params.simulation_hour) + ".geojson")
 
 
@@ -487,7 +487,7 @@ def get_path_length(simulation_params):
 def main():
 
     simulation_params = SimulationParams(
-        fo.open_json_file('simulation_params_2.json'))
+        fo.open_json_file('simulation_params.json'))
     get_path_length(simulation_params)
 
     base_params = BaseParams(0)
