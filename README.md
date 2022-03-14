@@ -18,12 +18,17 @@
   pip install tqdm
 # 使用方式
   1.下载源码之后，创建以下目录
+  
     simulation.py：simulationData/simulation_traveler_distribution
     
     simulation_maxU.py：simulationData_maxU/simulation_traveler_distribution
+    
   2.运行程序
+  
     python simulation.py
+    
     python simulation_maxU
+    
 # 注意！！！
   1.程序运行比较吃电脑性能，模拟一次需约2~3小时，一次请只运行一个模拟进程。\n
   2.程序入口函数为main()
@@ -42,10 +47,14 @@
     
   main函数中包括两个模拟，分别为工作日(0)和节假日(1)，如果只模拟一个，将另外一个注释即可
 # 输出结果解释
-  1.simulationData/timeData*.json：模拟结果的时间序列，表示景区内人数随时间变化的趋势\n
-  2.simulationData/simulationData*.json：模拟的每个游客的轨迹序列及其他参数\n
-  :grinning:*值为0或1，表示该结果属于工作日还是节假日\n
-  3.simulation_traveler.distribution/*_#.geojson：景区内游客的空间分布数据，坐标系为wgs84\n
-  :grinning:*值为0或1，表示该结果属于工作日还是节假日；#值为≥1，表示时间点\n
+  1.simulationData/timeData*.json：模拟结果的时间序列，表示景区内人数随时间变化的趋势
+  
+  2.simulationData/simulationData*.json：模拟的每个游客的轨迹序列及其他参数
+  
+  :grinning:*值为0或1，表示该结果属于工作日还是节假日
+  
+  3.simulation_traveler.distribution/*_#.geojson：景区内游客的空间分布数据，坐标系为wgs84
+  
+  :grinning:*值为0或1，表示该结果属于工作日还是节假日；#值为≥1，表示时间点
   
       
