@@ -44,7 +44,7 @@
       simulation(base_params1, simulation_params)
     
   main函数中包括两个模拟，分别为工作日(0)和节假日(1)，如果只模拟一个，将另外一个注释即可
-# 输出结果解释
+# 输出文件
   1.simulationData/timeData*.json：模拟结果的时间序列，表示景区内人数随时间变化的趋势
   
   2.simulationData/simulationData*.json：模拟的每个游客的轨迹序列及其他参数
