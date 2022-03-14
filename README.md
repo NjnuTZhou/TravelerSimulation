@@ -13,9 +13,8 @@
 ## 6.simulation_params2.json
   模拟程序所用的初始参数，包括路网拓扑、出入口节点、景点信息、提前计算好的效用解释变量
 # 依赖库
-  pip install geopy
-  
-  pip install tqdm
+    pip install geopy
+    pip install tqdm
 # 使用方式
   1.下载源码之后，创建以下目录
   
